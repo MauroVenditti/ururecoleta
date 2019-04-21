@@ -1,0 +1,25 @@
+<ion-header>
+    <app-header></app-header>
+</ion-header>
+
+<ion-content class="cards-bg">
+    <ion-card>
+        <!--<img [src]="selectedItem.properties.img" />-->
+        <imagenes [Imagen]="selectedItem.properties.img" [Item]="idRecibido"></imagenes>
+        <ion-fab vertical="top" horizontal="end" slot="fixed" (click)="itemTapped($event, selectedItem)">
+            <ion-fab-button>
+                <ion-icon name="map"></ion-icon>
+            </ion-fab-button>
+        </ion-fab>
+
+        <ion-card-content>
+            <ion-card-title>
+                {{ selectedItem.properties.titulo }}
+            </ion-card-title>
+            <h2>{{ selectedItem.properties.direccion }}</h2>
+            <p>
+                {{ selectedItem.properties.descripcion }}
+            </p>
+        </ion-card-content>
+    </ion-card>
+</ion-content>

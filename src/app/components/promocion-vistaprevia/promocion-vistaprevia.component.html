@@ -1,0 +1,21 @@
+<div class="card">
+    <div class="card-header">
+        <strong>Promoción</strong>
+    </div>
+    <div class="card-body">
+        <carousel>
+            <!--vp-->
+            <slide *ngFor="let slide of _imagen; let index=index">
+                <img [src]="slide" alt="..." class="carousel fill">
+
+                <!--carousel-->
+                <div *ngIf="Titulos" class="carousel-caption d-md-block text-white">
+                    <!-- d-none-->
+                    <h3>{{ Titulo }}</h3>
+                    <p>{{ Descripcion }}</p>
+                </div>
+            </slide>
+
+        </carousel>
+    </div>
+</div>

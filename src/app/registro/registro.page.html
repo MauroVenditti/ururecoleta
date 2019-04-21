@@ -1,0 +1,39 @@
+<ion-header>
+    <app-header Titulo="PAGINAS.PROMOCIONES"></app-header>
+</ion-header>
+
+<ion-content padding text-center class="backuru">
+    <ion-grid>
+        <ion-row>
+            <ion-col class="top-20">
+                <img src="assets/imgs/logo.png">
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col class="top-20">
+                <h3> Login </h3>
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col class="top-5">
+                <ion-button (click)="login('google')" expand="block" class="google" icon-left block>
+                    <ion-icon name="logo-google"></ion-icon>
+                    Google
+                </ion-button>
+
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col class="top-5">
+                <ion-button (click)="login('facebook')" expand="block" class="facebook" icon-left block>
+                    <ion-icon name="logo-facebook"></ion-icon>
+                    Facebook
+                </ion-button>
+            </ion-col>
+        </ion-row>
+
+    </ion-grid>
+</ion-content>

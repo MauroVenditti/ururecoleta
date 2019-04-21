@@ -1,0 +1,14 @@
+<ion-header>
+    <app-header></app-header>
+</ion-header>
+
+<ion-content>
+    <ion-item>
+        <ion-label>Habilitar Notificaciones</ion-label>
+        <ion-toggle [(ngModel)]="notificaciones" (ionChange)="requestPushNotificacionesPermission($event)"></ion-toggle>
+    </ion-item>
+    <ion-item>
+        <ion-label>Verificar Actualizaciones</ion-label>
+        <ion-toggle [(ngModel)]="actualizaciones" (ionChange)="requestActualizaciones($event)"></ion-toggle>
+    </ion-item>
+</ion-content>

@@ -1,0 +1,22 @@
+{
+    "PAGINAS": {
+        "INICIO": "Home",
+        "LISTA": "List",
+        "MAPA": "Map",
+        "RUTA": "Route",
+        "DETALLE": "Detail",
+        "PROMOCIONES": "Promotions",
+        "MISPROMOCIONES": "Saved Promotions"
+    },
+    "HOME": {
+        "titulo": "Home",
+        "subtitulo": "LEATHERS - SKINS - MARROWING",
+        "subtitulo2": "LEATHER FACTORY",
+        "direccion": "VICENTE LOPEZ 2132 - RECOLETA",
+        "ciudad": "Autonomous City of Buenos Aires"
+    },
+    "IDIOMA": "Languaje",
+    "HELLO": "Hello",
+    "WELCOME": "Welcome",
+    "GREETING": "Hi, {{ value }}"
+}

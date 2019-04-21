@@ -1,14 +1,36 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-toolbar>
+    <app-header></app-header>
 </ion-header>
 
-<ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+<ion-content class="backuru">
+    <ion-card class="backuru">
+        <ion-card-content>
+            <div text-center>
+                <img src="assets/imgs/icon.png" style="width: 70px; height: 70px;" class="center" />
+                <p> {{ 'HOME.subtitulo' | translate }} </p>
+                <img src="assets/Imagenes/UruFrente.png" style="width: 300px; height: 250px;" class="center" />
+                <p>{{ 'HOME.subtitulo2' | translate }}<br/><br/>
+                    <!--</p>-->
+                    <strong>{{ 'HOME.direccion' | translate }}</strong><br/>
+                    <!--<p>-->{{ 'HOME.ciudad' | translate }}<br/>
+                    <!--</p>-->
+                    <!--<p>-->Tel: 54 11 4804 9844 / 4804 0622<br/>
+                    <ion-icon name="logo-whatsapp"></ion-icon> +549 11 5943 2536</p>
+                <p>www.ururecoleta.com.ar <br/> ururecoleta@ururecoleta.com.ar <br/> ururecoleta@gmail.com</p>
+            </div>
+        </ion-card-content>
+    </ion-card>
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed" #fab>
+        <ion-fab-button>
+            <ion-icon name="share"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-list side="top">
+            <ion-fab-button (click)="shareN('facebook', fab)">
+                <ion-icon name="logo-facebook"></ion-icon>
+            </ion-fab-button>
+            <ion-fab-button (click)="shareN('twitter', fab)">
+                <ion-icon name="logo-twitter"></ion-icon>
+            </ion-fab-button>
+        </ion-fab-list>
+    </ion-fab>
 </ion-content>

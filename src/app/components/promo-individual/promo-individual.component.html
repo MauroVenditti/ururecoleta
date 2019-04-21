@@ -1,0 +1,9 @@
+<ion-card>
+    <ion-card-content center>
+        <promocion-vistaprevia [Imagen]="imagenes" [Titulos]="_titulos" [Titulo]="Promocion.titulo" [Descripcion]="Promocion.descripcion"></promocion-vistaprevia>
+        <ion-button expand="full" (click)="process(Promocion);">Obtener Codigo</ion-button>
+
+        <img *ngIf="displayQrCode()" [src]="generated" />
+        <p>Codigo: {{ code }}</p>
+    </ion-card-content>
+</ion-card>

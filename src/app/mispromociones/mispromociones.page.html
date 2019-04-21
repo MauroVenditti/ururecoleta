@@ -1,0 +1,19 @@
+<ion-header>
+    <app-header Titulo='PAGINAS.MISPROMOCIONES'></app-header>
+    <ion-toolbar>
+        <ion-buttons slot="end">
+            <ion-button icon-only (click)="promociones()">
+                <ion-icon name="more"></ion-icon>
+            </ion-button>
+            <ion-button icon-only (click)="salir()">
+                <ion-icon name="log-out"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <div class="row" *ngFor="let promocion of promocionesLocales; let index=index">
+        <app-mispromos [Promocion]="promocion"></app-mispromos>
+    </div>
+</ion-content>

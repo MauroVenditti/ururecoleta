@@ -1,0 +1,8 @@
+{
+    "/*": {
+        "target": "https://ururecoleta.com.ar/api",
+        "target1": "https://ururecoleta.herokuapp.com",
+        "secure": false,
+        "changeOrigin": true
+    }
+}

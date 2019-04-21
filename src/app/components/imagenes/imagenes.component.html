@@ -1,0 +1,14 @@
+<div class="card">
+    <div class="card-body" style="padding: 0px;">
+        <carousel>
+            <!-- class="carousel slide carousel-fade" -->
+            <slide *ngFor="let slide of _imagen; let index=index">
+                <img [src]="slide" alt="..." class="carousel">
+                <div *ngIf="Titulos" class="carousel-caption d-none d-md-block">
+                    <h3>{{ Titulo }}</h3>
+                    <p>{{ Descripcion }}</p>
+                </div>
+            </slide>
+        </carousel>
+    </div>
+</div>

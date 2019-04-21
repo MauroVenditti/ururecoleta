@@ -1,0 +1,16 @@
+<ion-header>
+    <app-header></app-header>
+</ion-header>
+
+<ion-content padding class="backuru">
+    <ion-list>
+        <ion-item *ngFor="let item of items[0]; let i = index" (click)="itemTapped($event, item)">
+            <item-lista [Imagen]="item.properties.img" [Item]="item"></item-lista>&nbsp;
+            <ion-label>
+                <h2>{{ item.properties.titulo }}</h2>
+                <h3>{{ item.properties.resumen }}</h3>
+                <p>{{ item.properties.direccion }}</p>
+            </ion-label>
+        </ion-item>
+    </ion-list>
+</ion-content>

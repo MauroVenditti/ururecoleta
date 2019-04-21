@@ -1,0 +1,16 @@
+<ion-card *ngFor="let p of Promocion">
+    <ion-card-content center>
+        <promocion-vistaprevia [Imagen]="imagenes" [Titulos]="_titulos" [Titulo]="p.titulo" [Descripcion]="p.descripcion"></promocion-vistaprevia>
+        <ion-col>
+            <ion-button (click)="verqr(p.cod_promo);">Ver QR</ion-button>
+        </ion-col>
+        <ion-col>
+            <ion-button (click)="eliminar(p.id);">Eliminar</ion-button>
+        </ion-col>
+
+        <!--<img *ngIf="displayQrCode()" [src]="generated" />-->
+        <app-verqr [generated]="generated"></app-verqr>
+
+        <p>Codigo: {{ p.cod_promo }}</p>
+    </ion-card-content>
+</ion-card>

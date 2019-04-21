@@ -1,0 +1,18 @@
+<ion-header>
+    <app-header></app-header>
+    <ion-toolbar>
+        <ion-buttons slot="end">
+            <ion-button icon-only (click)="mispromos()">
+                <ion-icon name="more"></ion-icon>
+            </ion-button>
+            <ion-button icon-only (click)="salir()">
+                <ion-icon name="log-out"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <h3>Promociones disponibles</h3>
+    <promocion></promocion>
+</ion-content>

@@ -1,0 +1,27 @@
+<ion-toolbar color="primary">
+    <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+        {{ Titulo | translate }}
+    </ion-title>
+    <ion-buttons *ngIf="showInstallBtn" slot="primary">
+        <ion-button (click)="showInstallBanner()">
+            Install
+        </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+        <ion-button icon-only (click)="choose($event)">
+            <ion-icon name="funnel"></ion-icon>
+        </ion-button>
+    </ion-buttons>
+</ion-toolbar>
+
+<ion-item [hidden]="ocultar" #sectionSelectArea>
+    <ion-label>{{ 'IDIOMA' | translate }}</ion-label>
+    <ion-select #sectionSelect padding-end (ionChange)="choose($event)">
+        <ion-select-option *ngFor="let item of idiomas" [value]="item.value">
+            {{ item.label }}
+        </ion-select-option>
+    </ion-select>
+</ion-item>

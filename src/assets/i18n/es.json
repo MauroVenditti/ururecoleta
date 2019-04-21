@@ -1,0 +1,22 @@
+{
+    "PAGINAS": {
+        "INICIO": "Inicio",
+        "LISTA": "Lista",
+        "MAPA": "Mapa",
+        "RUTA": "Ruta",
+        "DETALLE": "Detalle",
+        "PROMOCIONES": "Promociones",
+        "MISPROMOCIONES": "Promociones Guardadas"
+    },
+    "HOME": {
+        "titulo": "Inicio",
+        "subtitulo": "CUEROS - PIELES - MARROQUINERIA",
+        "subtitulo2": "FABRICA DE ROPA DE CUERO",
+        "direccion": "VICENTE LOPEZ 2132 - RECOLETA",
+        "ciudad": "Ciudad Autónoma de Buenos Aires"
+    },
+    "IDIOMA": "Idioma",
+    "HELLO": "Hola",
+    "WELCOME": "Bienvenido",
+    "GREETING": "Hola, {{ value }}"
+}
